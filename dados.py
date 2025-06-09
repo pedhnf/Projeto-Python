@@ -14,3 +14,10 @@ questions = [
     ["Qual comando é usado para verificar se x é igual a 10?", "x = 10", "x == 10", "x === 10", "x igual 10", 2],
     ["Qual índice representa o primeiro item de uma lista?", "0", "1", "-1", "primeiro", 1]
 ]
+# Criar DataFrame com as colunas corretas
+df = pd.DataFrame(questions, columns=["perguntas", "opção 1", "opção 2", "opção 3", "opção 4", "resposta"])
+
+# Salvar em arquivo Excel
+df.to_excel("questions.xlsx", index=False)
+
+print("Arquivo 'questions.xlsx' criado com sucesso!")
