@@ -83,7 +83,7 @@ def show_result():
     else:
         medalha_img = "medalha_bronze.png"
         mensagem = "Continue tentando! Medalha de BRONZE."
-
+#Tainara
     result_window = tk.Toplevel(janela)
     result_window.title("Resultado Final")
     result_window.geometry("320x400")
